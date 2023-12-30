@@ -7,7 +7,7 @@
 }
 
 :root {
-    --logo-font-size: 1.25rem;
+
 }
 
 body {
@@ -43,12 +43,16 @@ nav {
     }
 
     & .logo {
-        font-size: var(--logo-font-size);
-        font-size: clamp(var(--logo-font-size), 2vw + .5rem, 2rem);
+        --logo-font-size: 1.25rem;
+        font-size: clamp(var(--logo-font-size), 
+                        2vw + calc(var(--logo-font-size) - .75rem), 
+                        calc(var(--logo-font-size) + .75rem));
         font-weight: bold;
 
         & .accent {
-            font-size: clamp(calc(var(--logo-font-size) - .25rem), 2vw + .25rem, 1.75rem);
+            font-size: clamp(calc(var(--logo-font-size) - .25rem), 
+                            2vw + calc(var(--logo-font-size) - 1rem), 
+                            calc(var(--logo-font-size) + .5rem));
             font-weight: lighter;
             color: cyan;
         }
