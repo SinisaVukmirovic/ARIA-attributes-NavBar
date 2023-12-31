@@ -10,8 +10,8 @@
     --bg-clr: #222;
     --theme-clr: purple;
     --accent: yellow;
-    /* --accent: cyan; */
-    --text-clr: #eee;
+    --text-clr: #ddd;
+    --text-highlight: #eee;
 }
 
 body {
@@ -29,8 +29,22 @@ a {
     color: inherit;
 }
 
+h3 {
+    font-weight: lighter;
+}
+
 button {
     cursor: pointer;
+}
+
+code {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem 1rem;
+    background-color: #111;
+    display: block;
+    margin: 2rem auto;
+    border-radius: .5rem;
 }
 
 /* navbar styling */
@@ -39,7 +53,9 @@ nav {
     z-index: 10;
     width: 100%;
     padding: 1rem;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: var(--theme-clr);
+    color: var(--text-highlight);
 
     & .nav-container {
         max-width: 70rem;
@@ -80,8 +96,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: .5rem;
-        background-color: var(--bg-clr);
+        background-color: var(--theme-clr);
         position: absolute;
         z-index: -1;
         top: 4rem;
@@ -158,21 +173,13 @@ header {
     & h1 {
         font-size: 1.5rem;
         color: var(--accent);
-    }
-
-    
+    }  
 
     @media (min-width: 768px) {
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             letter-spacing: 2px;
         }
-        /* h2 {
-            font-size: 1.75rem;
-        }
-        h3 {
-            font-size: 1.25rem;
-        } */
     }
 }
 
@@ -186,10 +193,10 @@ main {
     }
 
     & h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     & h3 {
-        font-size: .75rem;
+        font-size: 1rem;
     }
 
     @media (min-width: 768px) {
@@ -197,16 +204,28 @@ main {
             font-size: 1.75rem;
         }
         h3 {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
         }
+    }
+
+    & section {
+        margin-block: 1rem;
     }
 }
 
 .definition {
-    padding-block: 1rem;
+    padding-block: 2rem;
     text-align: center;
+
+    & h2 {
+        color: var(--text-highlight);
+    }
 
     & > * {
         margin-block: 1rem;
     }
+}
+
+.code p {
+    text-wrap: balance;
 }
