@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARIA attributes NavBar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     
             <div class="nav-wrapper">
                 <button class="menu-btn" data-menu-btn
-                aria-label="Open molile menu button"
+                aria-label="Open mobile menu"
                 aria-expanded="false"
                 aria-controls="menu">
                     <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
@@ -26,16 +27,16 @@
     
                 <ul class="nav-links" role="menubar" id="menu">
                     <li role="none">
-                        <a role="menuitem" href="#">Home</a>
+                        <a role="menuitem" class="nav-link" href="#">Home</a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="#about">About</a>
+                        <a role="menuitem" class="nav-link" href="#about">About</a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="#services">Services</a>
+                        <a role="menuitem" class="nav-link" href="#services">Services</a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="#contact">Contact</a>
+                        <a role="menuitem" class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +44,11 @@
     </nav>
 
     <header>
-        <h1>ARIA attributes NavBar</h1>
+        <div class="content">
+            <h1>ARIA attributes NavBar</h1>
+            <h2>Web accessibility</h2>
+            <h3>Web accessibility, or eAccessibility, is the inclusive practice of ensuring there are no barriers that prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities, and socio-economic restrictions on bandwidth and speed.</h3>
+        </div>
     </header>
 </body>
 

@@ -7,7 +7,9 @@
 }
 
 :root {
-
+    --bg-clr: #222;
+    --theme-clr: #005a9c;
+    --accent: cyan;
 }
 
 body {
@@ -23,6 +25,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+    cursor: pointer;
 }
 
 /* navbar styling */
@@ -54,7 +60,7 @@ nav {
                             2vw + calc(var(--logo-font-size) - 1rem), 
                             calc(var(--logo-font-size) + .5rem));
             font-weight: lighter;
-            color: cyan;
+            color: var(--accent);
         }
     }
 
@@ -73,6 +79,7 @@ nav {
         flex-direction: column;
         align-items: center;
         gap: .5rem;
+        background-color: var(--bg-clr);
         position: absolute;
         z-index: -1;
         top: 4rem;
@@ -81,6 +88,10 @@ nav {
         text-align: center;
         transform: translate3d(0, -150%, 0);
         transition: transform 300ms ease-in-out;
+
+        /* & .nav-link:hover {
+            color: var(--accent);
+        } */
     }
 
     @media (min-width: 768px) {
@@ -89,6 +100,8 @@ nav {
         }
 
         .nav-links {
+            background-color: transparent;
+            transform: translate3d(0, 0, 0);
             position: static;
             z-index: 0;
             inset: 0;
@@ -102,6 +115,10 @@ nav {
       display: block;
       font-size: 1.1rem;
       padding: .5rem 1rem;
+    }
+
+    & .nav-link:hover {
+        color: var(--accent);
     }
 }
 
@@ -118,12 +135,42 @@ nav {
 }
 
 header {
-    min-height: 50svh;
+    min-height: 100svh;
+    padding: 10svh 5svw;
+    text-align: center;
     display: grid;
     place-items: center;
-    background-image: linear-gradient(to bottom, darkblue, steelblue);
+    /* background-image: linear-gradient(to bottom, #111, steelblue); */
+    background-color: var(--theme-clr);
+
+    & .content {
+        max-width: 60rem;
+        width: 100%;
+
+        & > * {
+            margin-block: 1rem;
+        }
+    }
 
     & h1 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+    }
+    & h2 {
+        font-size: 1rem;
+    }
+    & h3 {
+        font-size: .75rem;
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 2.25rem;
+        }
+        h2 {
+            font-size: 1.75rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+        }
     }
 }

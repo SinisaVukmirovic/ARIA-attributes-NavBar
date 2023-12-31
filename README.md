@@ -1,5 +1,7 @@
 ## NavBar with ARIA Attributes
 
+### Web accessibility - Web accessibility, or eAccessibility, is the inclusive practice of ensuring there are no barriers that prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities, and socio-economic restrictions on bandwidth and speed
+
 ### ARIA attributes enable modifying an element's states and properties as defined in the accessibility tree. 
 #### Note: ARIA only modifies the accessibility tree, modifying how assistive technology presents the content to your users. ARIA doesn't change anything about an element's function or behavior.
 
