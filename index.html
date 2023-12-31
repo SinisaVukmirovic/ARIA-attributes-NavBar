@@ -58,10 +58,28 @@
             </section>
             
             <section class="code">
+                <h4>aria-label</h4>
                 <code>
                     &lt;a href="#" aria-label="Go to start of homepage">ARIA labels&lt;/a>
                 </code>
                 <p>aria-label is important because link sometimes doesn't have any text in logo, so we need to provide somekind of description for assisstive technology, so that it knows what this link does</p>
+            </section>
+            <section class="code">
+                <h4>aria-expanded</h4>
+                <code>
+                    &lt;button aria-expanded="false">Menu&lt;/button>
+                </code>
+                <p>aria-expended is way of telling assisstive technology whather or not this is going to expend something else and is it expended or not</p>
+            </section>
+            <section class="code">
+                <h4>aria-controls</h4>
+                <code>
+                    &lt;button aria-controls="menu">Menu&lt;/button>
+                </code>
+                <p>aria-controls should point to the id of the element that is going to get expanded</p>
+                <code>
+                    &lt;ul class="nav-links" id="menu">
+                </code>
             </section>
         </div>
     </main>

@@ -43,7 +43,7 @@ code {
     padding: 2rem 1rem;
     background-color: #111;
     display: block;
-    margin: 2rem auto;
+    margin: .5rem auto 1rem;
     border-radius: .5rem;
 }
 
@@ -209,12 +209,27 @@ main {
     }
 
     & section {
-        margin-block: 1rem;
+        margin-bottom: 4rem;
+
+        & h4 {
+            text-align: center;
+            color: var(--accent);
+        }
+    }
+
+    @media (min-width: 768px) {
+        section {
+            margin-bottom: 6rem;
+
+            & h4 {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
 .definition {
-    padding-block: 2rem;
+    padding-block: 1rem;
     text-align: center;
 
     & h2 {
@@ -226,6 +241,21 @@ main {
     }
 }
 
+@media (min-width: 768px) {
+    .definition {
+        margin-block: 5rem;
+    }
+}
+
 .code p {
-    text-wrap: balance;
+    font-size: .9rem;
+    /* text-wrap: balance; */
+    /* padding-left: 2rem; */
+}
+
+@media (min-width: 768px) {
+    .code p {
+        font-size: 1.25rem;
+        padding-inline: 2rem;
+    }
 }
