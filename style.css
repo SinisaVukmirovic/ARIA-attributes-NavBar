@@ -174,9 +174,13 @@ header {
         font-size: 1.5rem;
         color: var(--accent);
     }  
+}
 
-    @media (min-width: 768px) {
-        h1 {
+@media (min-width: 768px) {
+    header {
+        min-height: 50svh;
+
+        & h1 {
             font-size: 3rem;
             letter-spacing: 2px;
         }
