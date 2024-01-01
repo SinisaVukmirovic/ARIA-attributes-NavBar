@@ -263,3 +263,17 @@ main {
         padding-inline: 2rem;
     }
 }
+
+footer {
+    text-align: center;
+    font-size: .8rem;
+    padding: .75rem;
+    background-color: var(--theme-clr);
+    color: var(--accent);
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 1rem;
+    }
+}
