@@ -10,3 +10,5 @@
 #### aria-expended is way of telling assisstive technology whather or not this section is going to expend something else and is it expanded or not
 
 #### aria-controls should point to the id of the element that is going to get expanded
+
+#### role attribute is what elements is about and is read by assistive technology, or ignored by assistive technology if set to "none"
