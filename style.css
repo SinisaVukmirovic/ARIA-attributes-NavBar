@@ -99,7 +99,7 @@ nav {
         background-color: var(--theme-clr);
         position: absolute;
         z-index: -1;
-        top: 4rem;
+        top: 100%;
         left: 0;
         right: 0;
         text-align: center;
